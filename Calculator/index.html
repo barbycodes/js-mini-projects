@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Calculator</h1>
+
+    <input id="num1" type="number" placeholder="First number">
+    <input id="num2" type="number" placeholder="Second number">
+
+    <div class="buttons">
+      <button onclick="showSum()">+</button>
+      <button onclick="showDifference()">-</button>
+      <button onclick="showProduct()">×</button>
+      <button onclick="showQuotient()">÷</button>
+    </div>
+
+    <input id="square-input" type="number" placeholder="Square / Square root">
+
+    <div class="buttons">
+      <button onclick="showSquare()">x²</button>
+      <button onclick="showSquareRoot()">√</button>
+    </div>
+
+    <p id="result"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
