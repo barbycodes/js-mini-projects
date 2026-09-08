@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixel Studio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div>
+            <p class="eyebrow">PIXEL ART CREATOR</p>
+
+            <h1>Pixel Studio</h1>
+
+            <p class="subtitle">
+                Create something pixel-perfect.
+            </p>
+        </div>
+
+    </header>
+
+
+    <main class="app">
+
+        <!-- CANVAS -->
+
+        <section class="canvas-section">
+
+            <div class="canvas-header">
+
+                <div>
+                    <h2>Your Canvas</h2>
+
+                    <span id="canvasSize">
+                        32 × 32
+                    </span>
+                </div>
+
+                <button id="gridToggle" class="small-button">
+                    Hide Grid
+                </button>
+
+            </div>
+
+
+            <div class="canvas-wrapper">
+
+                <div id="canvas"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTROLS -->
+
+        <aside class="controls">
+
+
+            <!-- COLORS -->
+
+            <section class="panel">
+
+                <div class="panel-title">
+
+                    <h3>Colors</h3>
+
+                    <span id="selectedColor">
+                        #000000
+                    </span>
+
+                </div>
+
+
+                <div id="palette" class="palette"></div>
+
+
+                <div class="custom-color">
+
+                    <label for="colorPicker">
+                        Custom color
+                    </label>
+
+                    <input
+                        type="color"
+                        id="colorPicker"
+                        value="#000000"
+                    >
+
+                </div>
+
+            </section>
+
+
+            <!-- TOOLS -->
+
+            <section class="panel">
+
+                <h3>Tools</h3>
+
+
+                <div class="tools">
+
+                    <button
+                        class="tool-button active"
+                        data-tool="brush"
+                    >
+                        🖌️ Brush
+                    </button>
+
+
+                    <button
+                        class="tool-button"
+                        data-tool="eraser"
+                    >
+                        🧽 Eraser
+                    </button>
+
+                </div>
+
+
+                <div class="history-buttons">
+
+                    <button
+                        id="undoButton"
+                        class="history-button"
+                    >
+                        ↶ Undo
+                    </button>
+
+
+                    <button
+                        id="redoButton"
+                        class="history-button"
+                    >
+                        ↷ Redo
+                    </button>
+
+                </div>
+
+
+                <button
+                    id="clearButton"
+                    class="clear-tool-button"
+                >
+                    🗑️ Clear Canvas
+                </button>
+
+            </section>
+
+
+            <!-- CANVAS SIZE -->
+
+            <section class="panel">
+
+                <h3>Canvas Size</h3>
+
+
+                <div class="sizes">
+
+                    <button
+                        class="size-button"
+                        data-size="16"
+                    >
+                        16 × 16
+                    </button>
+
+
+                    <button
+                        class="size-button"
+                        data-size="24"
+                    >
+                        24 × 24
+                    </button>
+
+
+                    <button
+                        class="size-button active"
+                        data-size="32"
+                    >
+                        32 × 32
+                    </button>
+
+
+                    <button
+                        class="size-button"
+                        data-size="48"
+                    >
+                        48 × 48
+                    </button>
+
+
+                    <button
+                        class="size-button"
+                        data-size="64"
+                    >
+                        64 × 64
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- DOWNLOAD -->
+
+            <section class="panel download-panel">
+
+                <h3>Save Your Artwork</h3>
+
+                <p>
+                    Download your pixel art as a PNG image.
+                </p>
+
+
+                <button
+                    id="downloadButton"
+                    class="download-button"
+                >
+                    💾 Download PNG
+                </button>
+
+            </section>
+
+        </aside>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Pixel Studio · Built with HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
