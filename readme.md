@@ -69,16 +69,3 @@ A basic calculator that performs arithmetic and advanced operations.
 
 ---
 
-## 🎨 Pixel Studio
-
-A pixel art editor that lets users create digital artwork on a customizable pixel canvas.
-
-## Features
-- Interactive pixel drawing canvas
-- Multiple canvas sizes from 16×16 to 64×64
-- 32-color palette and custom color picker
-- Brush and eraser tools
-- Undo and redo functionality
-- Clear canvas option
-- Download artwork as a PNG image
-- Responsive interface built with HTML and CSS
